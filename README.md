@@ -162,10 +162,12 @@ Runtime/package licenses / Lizenzen der Laufzeit und Pakete:
 
 Inspired by / Inspiriert von der
 [truncated SVD Shiny demonstration](https://fabian-s.shinyapps.io/truncatedSVD-shiny/).
-The screenshot depicts Minecraft (Mojang/Microsoft); this project is not affiliated
-with them. No blanket asset license is asserted and no project source-code license
-has been selected.
 
-Der Screenshot zeigt Minecraft (Mojang/Microsoft). Es besteht keine Verbindung
-zu diesen Unternehmen. Eine pauschale Lizenz für fremde Bildinhalte wird nicht
-beansprucht; eine Lizenz für den eigenen Projektquellcode wurde noch nicht gewählt.
+Screenshot image / Bildquelle: [Mountains by the lake](https://commons.wikimedia.org/wiki/File%3AMountains_by_the_lake_%28Unsplash%29.jpg)
+by / von Georgia Dixon, [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/),
+via Wikimedia Commons. The photo is used only for the screenshot, not bundled
+with the application. Das Foto dient nur dem Screenshot und wird nicht mit der
+Anwendung ausgeliefert.
+
+No project source-code license has been selected. Eine Lizenz für den eigenen
+Projektquellcode wurde noch nicht gewählt.
