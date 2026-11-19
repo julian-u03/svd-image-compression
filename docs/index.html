@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SVD Image Compression</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:,">
+  <script type="module" src="main.js"></script>
+</head>
+<body>
+  <h1>SVD Image Compression</h1>
+  <main>
+    <aside aria-label="Image settings">
+      <label for="inputfile">Image</label>
+      <input id="inputfile" type="file" accept="image/*" disabled>
+      <p id="sourceName"></p>
+
+      <label for="resolutionLimit">Resolution</label>
+      <select id="resolutionLimit" disabled>
+        <option value="64">64</option>
+        <option value="128">128</option>
+        <option value="512" selected>512</option>
+        <option value="original">Original</option>
+      </select>
+
+      <fieldset id="rankControls" aria-label="Ranks" disabled>
+        <label>Rank 1 <input id="rank1" type="number" min="1" step="1" value="1" required></label>
+        <label>Rank 2 <input id="rank2" type="number" min="1" step="1" value="5" required></label>
+        <label>Rank 3 <input id="rank3" type="number" min="1" step="1" value="15" required></label>
+      </fieldset>
+      <p id="rankStatus" role="status"></p>
+      <div class="actions">
+        <button id="processImage" type="button" disabled>Generate</button>
+        <button id="cancelProcessing" type="button" hidden>Cancel</button>
+      </div>
+      <p id="processingStatus" role="status">Open this page through an HTTP server.</p>
+    </aside>
+
+    <!-- One reference and spectrum above the four generated images. -->
+    <section class="workspace" aria-label="Results">
+      <div id="preview"><h2>Grayscale preview</h2><img id="imagePreview" alt="Processed grayscale image" hidden></div>
+      <section id="spectrumSection" hidden>
+        <h2>Singular value spectrum</h2>
+        <svg id="spectrum" viewBox="0 0 760 400" role="img" aria-label="Singular values on a logarithmic scale"></svg>
+      </section>
+      <div id="results"></div>
+    </section>
+  </main>
+  <noscript>Enable JavaScript to use this page.</noscript>
+</body>
+</html>

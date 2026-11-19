@@ -1,0 +1,8 @@
+# Normalize source text across Windows and GitHub.
+* text=auto
+*.py text eol=lf
+*.js text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.md text eol=lf
+*.png binary

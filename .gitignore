@@ -1,0 +1,12 @@
+# Local environments, caches, editor state and secrets
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+.env
+.env.*
+*.log
